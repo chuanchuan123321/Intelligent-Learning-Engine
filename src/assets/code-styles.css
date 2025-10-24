@@ -1,0 +1,50 @@
+/* 代码块样式优化 - 全局 */
+pre {
+  background-color: #f5f7fa !important;
+  color: #333 !important;
+  border: 1px solid #e4e7ed;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 16px 0;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+code {
+  background-color: #f5f7fa !important;
+  color: #333 !important;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* 暗色模式适配 */
+.dark pre,
+.dark code {
+  background-color: #283142 !important;
+  color: #e6e6e6 !important;
+  border-color: #4c4d4f;
+}
+
+/* AI回答中的代码块 */
+.ai-response pre,
+.chat-message-ai pre {
+  background-color: #f8f9fb !important;
+  color: #2c3e50 !important;
+  border-left: 4px solid #409eff;
+}
+
+.ai-response code,
+.chat-message-ai code {
+  color: #476582 !important;
+}
+
+/* 明显的语法高亮 */
+.token.comment { color: #6a737d !important; }
+.token.keyword { color: #d73a49 !important; }
+.token.string { color: #032f62 !important; }
+.token.number { color: #005cc5 !important; }
+.token.boolean { color: #005cc5 !important; }
+.token.function { color: #6f42c1 !important; }
+.token.property { color: #005cc5 !important; }
+.token.operator { color: #d73a49 !important; } 

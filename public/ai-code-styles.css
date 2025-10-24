@@ -1,0 +1,78 @@
+/* AI聊天中代码块高对比度样式 */
+.ai-message pre, 
+.ai-response pre, 
+.chat-message-ai pre {
+  background-color: #ffffff !important;
+  color: #24292f !important;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  tab-size: 2;
+}
+
+.ai-message code,
+.ai-response code,
+.chat-message-ai code {
+  background-color: #f6f8fa !important;
+  color: #24292f !important;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 85%;
+}
+
+/* 行内代码样式 */
+p code, li code, td code {
+  background-color: #f6f8fa !important;
+  color: #24292f !important;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+/* 语法高亮颜色 - GitHub风格 */
+.token.comment { color: #6a737d !important; }
+.token.keyword { color: #d73a49 !important; }
+.token.string { color: #032f62 !important; }
+.token.number { color: #005cc5 !important; }
+.token.boolean { color: #005cc5 !important; }
+.token.function { color: #6f42c1 !important; }
+.token.class-name { color: #6f42c1 !important; }
+.token.property { color: #005cc5 !important; }
+.token.operator { color: #d73a49 !important; }
+.token.punctuation { color: #24292e !important; }
+
+/* 暗色模式样式 */
+@media (prefers-color-scheme: dark) {
+  .ai-message pre,
+  .ai-response pre,
+  .chat-message-ai pre {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    border-color: #30363d;
+  }
+  
+  .ai-message code,
+  .ai-response code,
+  .chat-message-ai code,
+  p code, li code, td code {
+    background-color: #1e242c !important;
+    color: #c9d1d9 !important;
+  }
+  
+  /* 暗色模式语法高亮 */
+  .token.comment { color: #8b949e !important; }
+  .token.keyword { color: #ff7b72 !important; }
+  .token.string { color: #a5d6ff !important; }
+  .token.number { color: #79c0ff !important; }
+  .token.boolean { color: #79c0ff !important; }
+  .token.function { color: #d2a8ff !important; }
+  .token.class-name { color: #d2a8ff !important; }
+  .token.property { color: #79c0ff !important; }
+  .token.operator { color: #ff7b72 !important; }
+  .token.punctuation { color: #c9d1d9 !important; }
+} 
